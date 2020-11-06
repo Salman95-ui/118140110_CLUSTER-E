@@ -1,0 +1,13 @@
+.row {
+	display: flex;
+
+}
+.column1{
+	height: auto;
+	width: 200px ;
+}
+
+.column2{
+	height: auto;
+	width: 584px ;
+}

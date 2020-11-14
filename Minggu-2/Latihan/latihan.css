@@ -1,0 +1,72 @@
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar li {
+  float: right;
+  margin-right: 20px;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #5fdfe1;
+}
+
+.sidebar {
+  padding-top: 10px;
+  padding-bottom: 300px;
+  float: left;
+  height: auto;
+  width: 300px;
+  background-color: #f1f1f1;
+}
+.sidebar ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  list-style-type: none;
+  padding: 0px;
+  width: 200px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.sidebar li a {
+  display: block;
+  color: #000;
+  padding: 10px 16px;
+  width: 250px;
+  text-decoration: none;
+}
+.sidebar li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+body {
+  margin: 0px;
+  font: Helvetica, sans-serif;
+  color: #f84141;
+}
+
+.content {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.empat {
+  padding: 20px;
+  background-color: deeppink;
+  color: aliceblue;
+  margin-left: 330px;
+}
+
+/*# sourceMappingURL=latihan.css.map */

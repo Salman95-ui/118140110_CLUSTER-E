@@ -1,0 +1,138 @@
+$mycolor : rgb(95,223 , 225) ;
+$bgcolor : #333;
+$number  : 20px ;
+$align : center;
+
+
+.navbar{
+
+    ul{
+        list-style-type: none;
+        margin : 0;
+        padding : 0;
+        overflow: hidden;
+        background-color: $bgcolor;
+
+    }
+
+    li{
+        float : right;
+        margin-right:$number ;
+
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: $align;
+        padding: 14px $number;
+        text-decoration: none;
+
+    }
+
+    li a:hover{
+        background-color: $mycolor;
+        
+    }
+
+}
+
+.sidebar{
+    padding: {
+        top : 10px ;
+        bottom : 300px;
+    }
+    float: left;
+    height: auto;
+    width: 300px;
+    background-color: #f1f1f1;
+
+    ul{
+        margin : {
+            top : 20px ;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+        }
+        list-style-type: none;
+        padding: 0px;
+        width: 200px;
+        text-align: center;
+        background-color: #f1f1f1;
+
+    }
+
+    li {
+        a {
+            display: block;
+            color: #000;
+            padding: 10px 16px;
+            width: 250px ;
+            text-decoration: none;
+
+        }
+    }
+
+    li {
+        a:hover {
+            background-color: #555;
+            color: white;
+        }
+    }
+}
+
+@import "base" ;
+$var : 100 ;
+.content{
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: $var/3 * 10px;
+
+}
+.footer{
+    margin-top: $var * 2 ;
+    margin-left: (1px + 2px) * $var;
+}
+
+@mixin transforms($property){
+    padding: $property;
+    background-color: deeppink;
+    color: aliceblue;
+    margin-left: 330px;
+}
+
+.empat{
+    @include transforms(20px);
+}
+
+%shared-prop{
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+%inheritance-eg{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    color: white;
+    border: 10px solid black;
+}
+
+.satu {
+    @extend %shared-prop ;
+    margin-left: 330px;
+    background-color: chartreuse;
+}
+
+.dua{
+    @extend %inheritance-eg ;
+    margin-left: 330px;
+    background-color: gold;
+}
+
+.tiga{
+@extend %shared-prop;
+margin-left: 330px;
+background-color: red;
+}

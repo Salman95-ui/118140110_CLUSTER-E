@@ -1,0 +1,22 @@
+{
+	"nama" : {
+
+		"awal" : "salman" ,
+		"akhir" : "damanhuri"
+
+	} ,
+
+	"umur" : 20 ,
+
+	"asal" : {
+		"desa" : "rajeg" , 
+		"kecamatan" : "rajeg" ,
+		"kabupaten" : "Tangerang" 
+	} ,
+
+	"kelamin" : "Laki - laki " ,
+
+	"ttl" : "Tangerang , 22 - 07 - 2000" ,
+
+	"hobbie" : ["belajar" , "game" , "cycling"]
+}

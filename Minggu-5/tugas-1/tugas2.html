@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="show()">
+<input type="text" name="nama" value="salman">
+<p class="text">hello</p>
+<script type="text/javascript">
+	var name = document.getElementsByName('nama') ;
+	var text = document.getElementsByClassName('text') ;
+	function show(){
+		console.log(name) ;
+		text.innerTEXT = "Hello World" ;
+		document.querySelector(".text").style.color = "red";
+		document.querySelectorAll(".text").style.backgroundColor = "red";
+	}
+</script>
+</body>
+</html>
